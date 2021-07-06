@@ -1,0 +1,8 @@
+version: 3
+services:
+  php:
+    images: php:7.0-apache
+    volumes:
+      - ./php/html:/var/www/html
+    ports: 8080:80
+    container_name: php-test-container
